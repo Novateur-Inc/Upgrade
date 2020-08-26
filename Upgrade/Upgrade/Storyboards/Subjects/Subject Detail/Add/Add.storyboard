@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Subjects View Controller-->
+        <scene sceneID="jLg-I0-0sp">
+            <objects>
+                <viewController storyboardIdentifier="AddViewController" title="Subjects View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sve-xp-IlZ" customClass="AddViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pxh-MF-y6v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="IIl-sE-Dsq">
+                                <rect key="frame" x="20" y="70" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wge-BC-HBY">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="te2-aY-bis"/>
+                                        </constraints>
+                                        <state key="normal" image="Cancel"/>
+                                        <connections>
+                                            <action selector="buttonCancel:" destination="Sve-xp-IlZ" eventType="touchUpInside" id="4xq-YJ-dqq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21g-UK-l9D">
+                                        <rect key="frame" x="151" y="0.0" width="72" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2T-hm-fEW">
+                                        <rect key="frame" x="334" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="nEC-dX-P2e"/>
+                                        </constraints>
+                                        <state key="normal" image="Done"/>
+                                        <connections>
+                                            <action selector="buttonAdd:" destination="Sve-xp-IlZ" eventType="touchUpInside" id="q6r-Rh-h6N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="fYV-Pk-Ktb"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNr-gW-ap8">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-vv-eEf">
+                                        <rect key="frame" x="221" y="46" width="137" height="184"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrE-hN-mjK">
+                                                <rect key="frame" x="15.5" y="0.0" width="106" height="20"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-pW-90d">
+                                                <rect key="frame" x="0.0" y="28" width="137" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="137" id="65B-Ez-YIB"/>
+                                                    <constraint firstAttribute="height" constant="156" id="9RC-fM-qMt"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="184" id="14S-Wf-bIh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V6x-Mh-10i">
+                                        <rect key="frame" x="56" y="46" width="137" height="184"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deA-zb-WfT">
+                                                <rect key="frame" x="18" y="0.0" width="101.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHe-lI-vkz">
+                                                <rect key="frame" x="0.0" y="28" width="137" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="137" id="RbT-mf-hIO"/>
+                                                    <constraint firstAttribute="height" constant="156" id="fhr-d4-c5t"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="184" id="rfS-cf-cAV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O88-Fw-MN0">
+                                        <rect key="frame" x="20" y="297" width="374" height="210"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-dL-NSx">
+                                                <rect key="frame" x="140" y="51" width="94" height="108"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7f1-hx-prx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="70"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="70"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9Q-jj-OCj">
+                                                        <rect key="frame" x="36.5" y="78" width="21" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2Yk-dL-NSx" firstAttribute="centerY" secondItem="O88-Fw-MN0" secondAttribute="centerY" id="A7N-um-ekZ"/>
+                                            <constraint firstAttribute="height" constant="210" id="YVL-yy-Su0"/>
+                                            <constraint firstItem="2Yk-dL-NSx" firstAttribute="centerX" secondItem="O88-Fw-MN0" secondAttribute="centerX" id="nSu-gh-Zjg"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-rP-BP2">
+                                        <rect key="frame" x="148" y="252" width="118" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ERO-Wy-aAR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSb-mf-YrJ">
+                                        <rect key="frame" x="20" y="664" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zwR-P6-8UB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="CA1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonLevel:" destination="Sve-xp-IlZ" eventType="touchUpInside" id="fbX-7J-iAH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eeZ-rP-BP2" secondAttribute="trailing" constant="148" id="8jx-tK-yAB"/>
+                                    <constraint firstItem="O88-Fw-MN0" firstAttribute="top" secondItem="eeZ-rP-BP2" secondAttribute="bottom" constant="25" id="AfG-xS-N8f"/>
+                                    <constraint firstItem="V6x-Mh-10i" firstAttribute="top" secondItem="fNr-gW-ap8" secondAttribute="top" constant="46" id="GHF-9W-O9r"/>
+                                    <constraint firstItem="eeZ-rP-BP2" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="148" id="aIl-MZ-Jyh"/>
+                                    <constraint firstItem="ZD2-vv-eEf" firstAttribute="top" secondItem="fNr-gW-ap8" secondAttribute="top" constant="46" id="ah2-Jk-VYQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="O88-Fw-MN0" secondAttribute="trailing" constant="20" id="dJp-OP-Ojx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZD2-vv-eEf" secondAttribute="trailing" constant="56" id="eSS-1A-NmT"/>
+                                    <constraint firstItem="V6x-Mh-10i" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="56" id="fFQ-bK-Zq6"/>
+                                    <constraint firstAttribute="bottom" secondItem="XSb-mf-YrJ" secondAttribute="bottom" constant="42" id="hm7-Cv-qla"/>
+                                    <constraint firstAttribute="height" constant="756" id="kVp-NS-20M"/>
+                                    <constraint firstItem="O88-Fw-MN0" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="20" id="o5D-md-CMh"/>
+                                    <constraint firstItem="XSb-mf-YrJ" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="20" id="qHT-kh-Ifr"/>
+                                    <constraint firstAttribute="trailing" secondItem="XSb-mf-YrJ" secondAttribute="trailing" constant="20" id="vMb-lG-sfO"/>
+                                    <constraint firstAttribute="bottom" secondItem="O88-Fw-MN0" secondAttribute="bottom" constant="249" id="yMv-8Q-2aM"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="u3n-7g-aGv" appends="YES" id="CTM-XP-ws9"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fNr-gW-ap8" secondAttribute="bottom" id="2xP-rG-mrL"/>
+                            <constraint firstItem="fNr-gW-ap8" firstAttribute="top" secondItem="IIl-sE-Dsq" secondAttribute="bottom" constant="30" id="Bru-cw-Uk7"/>
+                            <constraint firstItem="fNr-gW-ap8" firstAttribute="leading" secondItem="KPQ-77-rkd" secondAttribute="leading" id="VjD-t6-UEW"/>
+                            <constraint firstItem="IIl-sE-Dsq" firstAttribute="top" secondItem="KPQ-77-rkd" secondAttribute="top" constant="26" id="hH6-tz-kep"/>
+                            <constraint firstItem="fNr-gW-ap8" firstAttribute="trailing" secondItem="KPQ-77-rkd" secondAttribute="trailing" id="yld-aK-6zO"/>
+                            <constraint firstItem="IIl-sE-Dsq" firstAttribute="leading" secondItem="KPQ-77-rkd" secondAttribute="leading" constant="20" id="yzP-UK-XCl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KPQ-77-rkd"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLevel" destination="XSb-mf-YrJ" id="b4A-nz-0PV"/>
+                        <outlet property="fieldMaxScore" destination="FHe-lI-vkz" id="4bI-T2-SW0"/>
+                        <outlet property="fieldUserScore" destination="Kxu-pW-90d" id="Kwy-ts-Pey"/>
+                        <outlet property="labelOutputGrade" destination="7f1-hx-prx" id="RLH-R0-icz"/>
+                        <outlet property="labelOutputScore" destination="M9Q-jj-OCj" id="crp-kq-yQs"/>
+                        <outlet property="viewGrade" destination="O88-Fw-MN0" id="aMW-oe-0Xp"/>
+                        <outlet property="viewMain" destination="fNr-gW-ap8" id="fst-eA-fON"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGg-8R-J67" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="u3n-7g-aGv">
+                    <connections>
+                        <action selector="tapDismiss:" destination="Sve-xp-IlZ" id="6kw-pG-yFn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2947.826086956522" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cancel" width="40" height="40"/>
+        <image name="Done" width="40" height="40"/>
+        <namedColor name="UP Blue">
+            <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UP Purple">
+            <color red="0.55686274509803924" green="0.32549019607843138" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
